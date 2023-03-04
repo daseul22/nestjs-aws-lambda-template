@@ -1,8 +1,10 @@
 ## Installation
 
-### AWS CLI, SAM CLI, and Docker
+### AWS Lambda, serverelss framework
 
-Install the AWS CLI, SAM CLI, and Docker on your machine.
+```bash
+$ npm install -g serverless
+```
 
 ### Dependencies
 
@@ -14,24 +16,36 @@ $ yarn install
 
 ```bash
 # development
-$ yarn run start
+$ npm run start
 
 # watch mode
-$ yarn run start:dev
+$ npm run start:dev
 
 # production mode
-$ yarn run start:prod
+$ npm run start:prod
+
+# serverless offline
+$ npm run sls:offline
+
+# serverless deploy:dev
+$ npm run sls:deploy:dev
+
+# serverless deploy:staging
+$ npm run sls:deploy:staging
+
+# serverless deploy:prod
+$ npm run sls:deploy:prod
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ yarn run test
+$ npm run test
 
 # e2e tests
-$ yarn run test:e2e
+$ npm run test:e2e
 
 # test coverage
-$ yarn run test:cov
+$ npm run test:cov
 ```
